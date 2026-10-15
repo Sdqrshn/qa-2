@@ -11,7 +11,6 @@ class Catalog:
 
     def navigate(self):
         self.page.goto("https://practicesoftwaretesting.com/")
-        self.page.wait_for_load_state("networkidle")
     
     def select_item(self):
         self.navigate()

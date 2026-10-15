@@ -9,7 +9,6 @@ class LoginPage:
 
     def navigate(self):
         self.page.goto("https://practicesoftwaretesting.com/")
-        self.page.wait_for_load_state("networkidle")
 
     def login(self, email, password):
         self.sign_in_button.click()
