@@ -11,11 +11,6 @@ class Catalog:
 
     def navigate(self):
         self.page.goto("https://practicesoftwaretesting.com/")
-        print("URL:", self.page.url)
-        print("TITLE:", self.page.title())
-        print("SIGN-IN COUNT:", self.page.locator("[data-test='nav-sign-in']").count())
-
-        self.page.screenshot(path="debug.png")
     
     def select_item(self):
         self.navigate()
